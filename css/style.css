@@ -23,6 +23,8 @@ body {
   max-width: 1100px;
   margin: 40px auto;
   padding: 40px 20px;
+  position: relative;
+ 
 }
 
 /* SECCIONES DE COLEGIOS*/
@@ -44,6 +46,8 @@ body {
   gap: 30px;
   margin-bottom: 50px;
   flex-wrap: wrap;
+  background-color: #ece5e5;
+  margin: auto 30px;
 }
 
 /* Imágenes */
@@ -84,7 +88,7 @@ body {
 .tercero a {
   font-size: 1rem;
   line-height: 1.5;
-  color: #fafafa;
+  color: #000000;
   font-weight: normal;
   text-align: justify;
   text-decoration: none;
@@ -99,33 +103,33 @@ hr {
 }
 
 /*SECCIÓN UNIVERSIDAD (francisco) */
+
+
 .title h1 {
   text-align: center;
-  font-size: 2.8em;
-  color: var(--color-primario);
-  text-shadow: 0 0 10px #dddddd;
-  letter-spacing: 2px;
 }
 
 .info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+ 
+ border-radius: 20px;
+justify-content: center;
+align-items: center;
+position: relative;
+ display: flex;
+  flex-direction: column;
+
 }
 
 .info img {
-  width: 380px;
+  width: 500px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(214, 214, 214, 0.93);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  
 }
 
 .info img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(4, 4, 4, 0.7);
+  box-shadow: 0 0 30px rgba(211, 211, 211, 0.7);
 }
 
 .info div {
@@ -135,7 +139,7 @@ hr {
 }
 
 .info p {
-  font-size: 1.1em;
+  font-size: 15px;
   line-height: 1.7;
   color: #ece5e5;
 }
