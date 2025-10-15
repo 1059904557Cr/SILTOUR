@@ -1,0 +1,160 @@
+/* ===============================
+   🎨 VARIABLES Y CONFIGURACIÓN
+================================== */
+:root {
+  --color-primari: #39643f;
+  --color-acento: #00c3ff;
+  --color-texto-claro: #ffffff;
+}
+/* ===============================
+   🌌 ESTILOS GENERALES
+================================== */
+body {
+  background:rgb(11, 11, 11);
+  color: #f0ebeb;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Contenedor general */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px 20px;
+}
+
+/* SECCIONES DE COLEGIOS*/
+.titulo h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: var(--color-primari);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+/* Bloques de contenido */
+.primera,
+.segundo,
+.tercero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+/* Imágenes */
+.primera img,
+.segundo img,
+.tercero img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primera img:hover,
+.segundo img:hover,
+.tercero img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.856);
+}
+
+/* Texto */
+.primera div,
+.segundo div,
+.tercero div {
+  flex: 1;
+}
+
+.primera h1,
+.segundo h1,
+.tercero h1 {
+  color: var(--color-primari);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.primera a,
+.segundo a,
+.tercero a {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fafafa;
+  font-weight: normal;
+  text-align: justify;
+  text-decoration: none;
+}
+
+/* Separador */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-primario), transparent);
+  margin: 40px 0;
+}
+
+/*SECCIÓN UNIVERSIDAD (francisco) */
+.title h1 {
+  text-align: center;
+  font-size: 2.8em;
+  color: var(--color-primario);
+  text-shadow: 0 0 10px #dddddd;
+  letter-spacing: 2px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info img {
+  width: 380px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(214, 214, 214, 0.93);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.info img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(4, 4, 4, 0.7);
+}
+
+.info div {
+  flex: 1;
+  min-width: 300px;
+  text-align: justify;
+}
+
+.info p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #ece5e5;
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+  .primera,
+  .segundo,
+  .tercero,
+  .info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .primera img,
+  .segundo img,
+  .tercero img,
+  .info img {
+    width: 80%;
+    max-width: 350px;
+  }
+}
